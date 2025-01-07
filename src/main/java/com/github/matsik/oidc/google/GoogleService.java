@@ -1,5 +1,6 @@
 package com.github.matsik.oidc.google;
 
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
@@ -14,6 +15,7 @@ public class GoogleService {
         this.props = props;
     }
 
+    @Cacheable(value = "googleEndpointsCache")
     public GoogleOIDCEndpoints getEndpoints() {
         return restTemplate.getForObject(props.discoveryDocumentURI(), GoogleOIDCEndpoints.class);
     }

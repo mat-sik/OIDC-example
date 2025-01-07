@@ -17,10 +17,10 @@ import java.util.concurrent.TimeUnit;
 
 @SpringBootApplication
 @ConfigurationPropertiesScan
-public class OidcApplication {
+public class OIDCApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(OidcApplication.class, args);
+        SpringApplication.run(OIDCApplication.class, args);
     }
 
     @Bean

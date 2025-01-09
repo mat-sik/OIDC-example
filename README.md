@@ -1,7 +1,5 @@
 # OIDC-example
 
-This project demonstrates the implementation of an OpenID Connect (OIDC) authentication system without relying on any
-external libraries. The goal is to provide a deeper understanding of each step in the OIDC authentication flow.
-
-Google is used as the authentication provider, following their
-official [OpenID Connect guide](https://developers.google.com/identity/openid-connect/openid-connect).
+This project demonstrates the integration of Spring Security with OpenID Connect (OIDC) authentication. The user session
+is stored in Redis using the appropriate Spring libraries, enabling efficient session management, which allows for
+horizontal scaling.
